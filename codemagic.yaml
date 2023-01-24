@@ -25,7 +25,7 @@ workflows:
       - build/**/outputs/**/mapping.txt
     publishing:
       firebase:
-        firebase_token: $FIREBASE_SERVICE_ACCOUNT
+        firebase_service_account: $FIREBASE_SERVICE_ACCOUNT
         android:
           app_id: 1:104130086884:android:c294f62b1872cd386ae9f1
           groups:
