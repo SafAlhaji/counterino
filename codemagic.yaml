@@ -5,7 +5,7 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       android_signing:
-        - keystore_reference
+        - counterino
       vars:
         PACKAGE_NAME: "io.codemagic.safwanapp"
     scripts:
