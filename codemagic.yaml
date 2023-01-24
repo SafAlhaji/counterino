@@ -6,6 +6,8 @@ workflows:
     environment:
       android_signing:
         - counterino
+      groups:
+        - firebase_credentials
       vars:
         PACKAGE_NAME: "io.codemagic.safwanapp"
     scripts:
@@ -21,3 +23,11 @@ workflows:
     artifacts:
       - build/**/outputs/**/*.apk
       - build/**/outputs/**/mapping.txt
+    publishing:
+      firebase:
+        firebase_token: $FIREBASE_SERVICE_ACCOUNT
+        android:
+          app_id: 1:104130086884:android:c294f62b1872cd386ae9f1
+          groups:
+            - androidTesters
+          artifact_type: 'apk'
