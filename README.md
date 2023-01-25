@@ -1,5 +1,7 @@
 # counterino
 
+[![Codemagic build status](https://api.codemagic.io/apps/63d006af4ce847cdbce61e5b/android-workflow/status_badge.svg)](https://codemagic.io/apps/63d006af4ce847cdbce61e5b/android-workflow/latest_build)
+
 A new Flutter project.
 
 ## Getting Started
