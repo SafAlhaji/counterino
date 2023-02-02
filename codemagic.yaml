@@ -22,6 +22,11 @@ workflows:
     artifacts:
       - build/**/outputs/**/*.apk
       - build/**/outputs/**/mapping.txt
+    triggering:
+      events:                       # List the events that trigger builds
+        - push
+      branch_patterns:              # Include or exclude watched branches
+        - pattern: 'main'
     publishing:
       firebase:
         firebase_service_account: $FIREBASE_SERVICE_ACCOUNT
