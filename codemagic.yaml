@@ -27,6 +27,7 @@ workflows:
         - push
       branch_patterns:              # Include or exclude watched branches
         - pattern: 'main'
+          include: true
     publishing:
       firebase:
         firebase_service_account: $FIREBASE_SERVICE_ACCOUNT
